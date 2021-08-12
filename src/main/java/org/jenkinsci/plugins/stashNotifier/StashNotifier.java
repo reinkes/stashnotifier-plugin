@@ -260,8 +260,8 @@ public class StashNotifier extends Notifier implements SimpleBuildStep {
         return commitSha1;
     }
 
-    public StashBuildState getBuildStatus() {
-        return buildStatus;
+    public String getBuildStatus() {
+        return buildStatus.name();
     }
 
     public String getBuildName() {
